@@ -1,0 +1,57 @@
+<html>
+<head>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Week 7: Weather API via OpenWeatherMap</title>
+</head>
+<!-- get initial location (if user approves) -->
+<body onload="userCity()">
+<header style="width: 1000px; text-align: center; margin: 0 auto;">
+<h4>Weather App</h4>
+</header>
+<!-- add outer "nesting" container to hold information up top rather than having user scroll down, especially if overflow exists -->
+<div class="divOuterContainer" style="width: 1000px; margin: 0 auto;">
+  <div class="divOuterContainerBody">
+    <div class="divOuterContainerRow">
+      <div class="divOuterContainerCell">
+        <main class="flex-row justify-space-between">
+        <div class="">
+          <div class="card">
+          <h3 class="card-header text-uppercase">Search for a city</h3>
+          <h6>Sample API Key for TESTING ONLY:<br>bd5e378503939ddaee76f12ad7a97608</h6>
+            <div id="user-form">
+              <input type="text" id="userString" placeholder="City Name..."/><br>
+              <input type="text" id="apiKey" placeholder="OpenWeatherAPI Key (now requires credit card)"/>
+              <button class="buttons" id="searchButton">Search</button>
+            </div>
+          </div>
+          <div class="card history">
+          <h4>Search History</h4>
+          </div>
+        </div>
+      </div>
+      <div class="divOuterContainerCell">
+        <div class="col-12 col-sm-12 col-md-8 float-right">
+          <div>
+          <h3 class="">Weather of your location:</h3>
+            <div class="city">
+            </div>
+          </div>
+          <div>
+          </div>
+        </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 class="" style="width: 926px; margin: 0 auto; text-align: center;">Weather Forecast for the next 5 Days</h3>
+<div class="weather-cards" style="width: 1000px; margin: 0 auto;">
+</div>
+</body>
+<footer style="width: 926px; margin: 0 auto; text-align: center;">
+Portfolio: <a href = "https://github.com/davehyler">D.Hyler</a>
+</footer>
+<!-- Link to jQuery scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="./assets/script/script.js"></script>
+</html>
